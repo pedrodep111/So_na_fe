@@ -12,10 +12,6 @@
             name="query"
             placeholder="Ex: coca cola, whey protein, arroz..."
             class="flex-1 border border-gray-300 rounded-xl px-5 py-3 text-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400"
-            hx-get="/search"
-            hx-trigger="keyup changed delay:500ms"
-            hx-target="#results"
-            hx-indicator="#loading"
         />
         <button
             class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl text-lg font-semibold shadow-sm transition-all"
@@ -23,7 +19,9 @@
             hx-include="#search-input"
             hx-target="#results"
             hx-indicator="#loading"
-        >Buscar</button>
+        >
+            Buscar
+        </button>
     </div>
 
     <span id="loading" class="htmx-indicator text-gray-400 mt-4">Buscando...</span>
