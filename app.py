@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
 from services.api import search_products, get_product
-from services.vision import identify_food_from_image
 from dotenv import load_dotenv
 
 load_dotenv()
