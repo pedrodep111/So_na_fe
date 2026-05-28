@@ -1,14 +1,11 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from services.api import search_products, get_product
-from dotenv import load_dotenv
-
-load_dotenv()
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("foodsearch.html")
+    return send_from_directory("templates", "foodfinder.html")
 
 @app.route("/search")
 def search():
