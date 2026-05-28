@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FoodSearch</title>
+  <title>FoodFinder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -11,16 +11,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #F5F2EC;
-      --surface: #FDFCF9;
-      --surface2: #EDE9E0;
-      --ink: #1A1814;
-      --ink2: #5C5850;
-      --ink3: #9A9589;
-      --accent: #C84B2F;
-      --accent2: #2C6B4F;
-      --border: #D8D3C8;
-      --border2: #C4BFB3;
+      --bg: #F0FDF4;
+      --surface: #FFFFFF;
+      --surface2: #DCFCE7;
+      --ink: #14532D;
+      --ink2: #166534;
+      --ink3: #4ADE80;
+      --accent: #16A34A;
+      --accent2: #15803D;
+      --border: #BBF7D0;
+      --border2: #86EFAC;
       --font-display: 'DM Serif Display', Georgia, serif;
       --font-body: 'DM Sans', system-ui, sans-serif;
       --r: 12px;
@@ -29,16 +29,16 @@
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #141210;
-        --surface: #1E1C19;
-        --surface2: #252320;
-        --ink: #F0ECE4;
-        --ink2: #A09A90;
-        --ink3: #605C54;
-        --accent: #E8634A;
-        --accent2: #4A9973;
-        --border: #2E2C28;
-        --border2: #3A3830;
+        --bg: #052e16;
+        --surface: #14532d;
+        --surface2: #166534;
+        --ink: #f0fdf4;
+        --ink2: #bbf7d0;
+        --ink3: #86efac;
+        --accent: #22c55e;
+        --accent2: #16a34a;
+        --border: #166534;
+        --border2: #15803d;
       }
     }
 
@@ -127,7 +127,7 @@
     .search-input::placeholder { color: var(--ink3); }
     .search-input:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(200,75,47,0.12);
+      box-shadow: 0 0 0 3px rgba(22,163,74,0.15);
       background: var(--surface);
     }
     .search-btn {
@@ -476,7 +476,7 @@
     <div class="wrap header-inner">
       <a href="#" class="logo" onclick="backToHome(); return false;">
         <span class="logo-dot"></span>
-        <span>FoodSearch</span>
+        <span>FoodFinder</span>
       </a>
       <form class="search-form" onsubmit="handleSearch(event)">
         <div class="search-input-wrap">
